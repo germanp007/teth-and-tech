@@ -2,19 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+* {
   margin: 0%;
   padding: 0%;
   overflow: hidden;
   box-sizing: border-box;
 }
 
-/* @keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+body {
+    overflow: hidden;
 }
-
-.animate {
-  animation: spin 10s linear infinite;
-} */

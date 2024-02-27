@@ -14,7 +14,6 @@ const LogoComponent = (props) => (
     }}
     viewBox="0 0 42000 29700"
     {...props}
-    className="mt-[-40px]"
   >
     <defs>
       <style>
