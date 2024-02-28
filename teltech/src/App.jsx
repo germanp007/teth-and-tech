@@ -4,8 +4,7 @@ import SvgGearYellow from "./SvgComponents/SvgGearYellow";
 import Desktop from "./navbar/Desktop";
 import Mobile from "./navbar/Mobile";
 import SvgGearDark from "./SvgComponents/SvgGearDark";
-import MentalPeace from "./SvgComponents/MentalPeace";
-import Maintenance from "./SvgComponents/Maintenance";
+import "animate.css";
 
 const App = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -23,14 +22,20 @@ const App = () => {
   }, []);
 
   return (
-    <main className="">
+    <main className="min-h-screen">
       {width <= 770 ? <Mobile /> : <Desktop />}
-      <article className="w-screen relative bg-[url(public/team-process-creation.jpg)] bg-cover flex justify-center items-center">
-        <div className="absolue w-full h-full bg-blue-500 opacity-75 flex justify-center items-center">
-          <h1 className="text-8xl text-white font-bold">
-            Trustworthy Projects
-          </h1>
-        </div>
+      <article className="w-screen relative bg-[url(public/team-process-creation.webp)] bg-cover flex justify-center items-center text-center">
+        <h1 className="animate__animated animate__fadeInDown absolute z-10 text-[42px] text-white font-bold">
+          Driving{" "}
+          <span
+            className="text-[52px] text-yellow-500"
+            style={{ textShadow: "2px 4px 4px rgba(0,0,0,0.9)" }}
+          >
+            Business Growth
+          </span>{" "}
+          <br /> with Customized Software Solutions
+        </h1>
+        <div className="absolue w-full h-full bg-blue-400 opacity-75 flex justify-center items-center"></div>
         <SvgGearDark witdh={150} height={150} />
         <SvgGearBlue witdh={150} height={150} />
         <SvgGearYellow witdh={150} height={150} />
