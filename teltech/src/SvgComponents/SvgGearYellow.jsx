@@ -5,7 +5,7 @@ const SvgGearYellow = (props) => (
     xmlSpace="preserve"
     viewBox="0 0 512 512"
     {...props}
-    className="absolute animate-spinMedium rotate-[-180deg] right-[5.6rem] bottom-[1.6rem]"
+    className="absolute animate-spinMedium rotate-[-180deg] right-[3.2rem] bottom-[3rem]"
   >
     <path
       fill="#d97706"
