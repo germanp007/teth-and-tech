@@ -5,7 +5,6 @@ const SvgGearBlue = (props) => (
     xmlSpace="preserve"
     viewBox="0 0 512 512"
     {...props}
-    className="animate-spinSlow absolute z-[10] right-[-50px] bottom-[-30px] transition-all duration-500"
   >
     <path
       fill="#27488F"
