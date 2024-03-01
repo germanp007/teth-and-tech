@@ -2,8 +2,14 @@ import LogoComponent from "./LogoNav";
 
 const Desktop = () => {
   return (
-    <nav className="h-[80px]  w-screen flex justify-between shadow-sm">
-      <LogoComponent width={150} height={80} />
+    <nav className="hidden h-[90px]  w-screen navResponsive:flex justify-between shadow-sm">
+      <div className="relative h-full justify-center items-center w-[200px] overflow-hidden">
+        <LogoComponent
+          width={200}
+          height={120}
+          className="absolute top-[-15px]"
+        />
+      </div>
       <ul className=" h-full flex justify-center items-center gap-14 mr-32  text-xl text-[#27488F]">
         <li className="group cursor-pointer flex flex-col justify-evenly h-full transition-all duration-500 relative ">
           <h3 className="peer">Services</h3>

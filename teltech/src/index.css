@@ -12,4 +12,7 @@
 article {
   height: calc(100vh - 80px);
   overflow: hidden;
+  background-image: url("/public/images/team-process-creation.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

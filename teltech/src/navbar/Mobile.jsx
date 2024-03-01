@@ -2,12 +2,12 @@ import LogoComponent from "./LogoNav";
 
 const Mobile = () => {
   return (
-    <nav className="h-20 w-full flex justify-between items-center">
+    <nav className="h-20 w-full flex justify-between items-center navResponsive:hidden">
       <LogoComponent width={120} height={100} />
       <img
         src="../public/logo/menu_2976215.png"
         alt="menu"
-        className="w-8 h-8"
+        className="w-8 h-8 mr-8"
       />
     </nav>
   );

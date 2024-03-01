@@ -7,24 +7,11 @@ import SvgGearDark from "./SvgComponents/SvgGearDark";
 import "animate.css";
 
 const App = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-  console.log(width);
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <main className="min-h-screen">
-      {width <= 770 ? <Mobile /> : <Desktop />}
-      <article className="w-screen relative bg-[url(public/team-process-creation.webp)] bg-cover flex justify-center items-center text-center">
+      <Mobile />
+      <Desktop />
+      <article className="w-screen relative flex justify-center items-center text-center">
         <h1 className="animate__animated animate__fadeInDown absolute z-10 text-[42px] text-white font-bold">
           Driving{" "}
           <span
